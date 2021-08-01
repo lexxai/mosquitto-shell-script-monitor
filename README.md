@@ -8,6 +8,9 @@ Telegram messages use unicode emoji icons:
 
 ![зображення](https://user-images.githubusercontent.com/3278842/127754810-28c87610-4d7a-446d-aad5-f4920a3a6329.png)
 
+Emoji list: https://www.unicode.org/emoji/charts/full-emoji-list.html 
+
+tools for convert unicode to string of bytes: https://onlineunicodetools.com/convert-unicode-to-bytes
 
 
 More info here:
