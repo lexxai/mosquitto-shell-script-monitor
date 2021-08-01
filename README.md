@@ -1,4 +1,4 @@
-# mosquitto-shell-script-monitor
+# mosquitto-shell-script-monitor for listen MQTT topics
 Shell script for monitor mosquitto topics, and send notify messages
 
 Sheel script loaded by start on OpenWRT device, and in infinite loop listen mqtt topics by mosquitto_pub. 
