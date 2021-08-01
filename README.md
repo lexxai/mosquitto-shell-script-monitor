@@ -29,6 +29,9 @@ Files:
 - telegram-delete-old.sh, started daily by cron,
   this script purge old messages via api.telegram.org and curl with use message ID from log file on dav file system.
   
+- device-tracker.sh, wifi tracker loop script, stared on boot as device-tracker.sh&.
+  Check when users present in local wifi newtwork, runned on openwrt router.  
+  
 Example of MQTT messages:
 ```
 #mosquitto_sub -v -t 'door/#' -t 'stat/pir_01/RESULT' -t '+/+/LWT'  -q 0
