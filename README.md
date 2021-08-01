@@ -28,3 +28,17 @@ Files:
 
 - telegram-delete-old.sh, started daily by cron,
   this script purge old messages via api.telegram.org and curl with use message ID from log file on dav file system.
+  
+Example of MQTT messages:
+```
+#mosquitto_sub -v -t 'door/#' -t 'stat/pir_01/RESULT' -t '+/+/LWT'  -q 0
+door/armed ON
+door/locked ON
+door/closed ON
+tele/pir_01/LWT Online
+tele/led_01/LWT Online
+stat/pir_01/RESULT {"PIR":{"Action":"ON"}}
+stat/pir_01/RESULT {"PIR":{"Action":"OFF"}}
+stat/pir_01/RESULT {"PIR":{"Action":"ON"}}
+stat/pir_01/RESULT {"PIR":{"Action":"OFF"}}
+```
