@@ -16,3 +16,12 @@ https://lexxai.blogspot.com/2021/01/mqtt-openwrt-telegram-emoji.html
 
 Tasmoto devices:
 - https://lexxai.blogspot.com/2020/09/offdarks-modern-led-smart-ceiling-light.html
+
+
+Files: 
+- mqtt-jobs.sh, main loop script, stared on boot as mqtt-jobs.sh&
+- totelegram.sh,
+  this script send messages via api.telegram.org and curl with saving message ID to log file on dav file system.
+
+- telegram-delete-old.sh, started daily by cron,
+  this script purge old messages via api.telegram.org and curl with use message ID from log file on dav file system.
