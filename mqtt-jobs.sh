@@ -102,7 +102,7 @@ while true; do
        esac
      ;;
      "stat/pir_01/RESULT")
-      if [ "$v" == '{"PIR":{"Action":"ON"}}' ];then
+      if [ "$stateLocked" == "ON" ] && [ "$v" == '{"PIR":{"Action":"ON"}}' ];then
        #moving is, set state
        stateAtHome=1
       fi
